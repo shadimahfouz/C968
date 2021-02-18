@@ -1,0 +1,14 @@
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.exe.config
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.exe
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.pdb
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csprojAssemblyReference.cache
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.AddProduct.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.ModProducts.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.ModPart.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.Form1.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.AddPart.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.Properties.Resources.resources
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csproj.GenerateResource.cache
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csproj.CoreCompileInputs.cache
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.exe
+C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.pdb
