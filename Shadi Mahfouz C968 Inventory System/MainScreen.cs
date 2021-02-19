@@ -21,5 +21,79 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         {
 
         }
+
+        private void AddParts_Click(object sender, EventArgs e)
+        {
+            new AddPart().ShowDialog();
+        }
+
+        private void ModifyParts_Click(object sender, EventArgs e)
+        {
+            new ModPart().ShowDialog();
+        }
+
+        private void DeleteParts_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in PartGrid.SelectedRows)
+            {
+                PartGrid.Rows.RemoveAt(row.Index);
+            }
+        }
+
+        private void PartGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AddProducts_Click(object sender, EventArgs e)
+        {
+            Product 
+        }
+
+        private void SearchParts_Click(object sender, EventArgs e)
+        {
+            if (SearchPartBox < 1)
+                return;
+
+            Part searchResultPart = Inventory.LookupPart(SearchPartBox);
+
+            foreach (DataGridViewRow row in PartGrid.Rows)
+            {
+                Part part = (Part) row.DataBoundItem;
+
+                if (part.partId == searchResultPart.partId)
+                {
+                    row.Selected = true;
+                    break;
+                }
+                else
+                {
+                    row.Selected = false;
+                }
+            }
+        }
+
+        private void SearchProducts_Click(object sender, EventArgs e)
+        {
+            if (SearchProdBox < 1)
+                return;
+
+            Product searchResultProduct = Inventory.LookupProduct(SearchProdBox);
+
+            foreach (DataGridViewRow row in ProdGrid.Rows)
+            {
+                Product prod = (Product) row.DataBoundItem;
+
+                if (prod.productId == searchResultProduct.productId)
+                {
+                    row.Selected = true;
+                    break;
+                }
+                else
+                {
+                    row.Selected = false;
+                }
+            }
+        }
     }
 }

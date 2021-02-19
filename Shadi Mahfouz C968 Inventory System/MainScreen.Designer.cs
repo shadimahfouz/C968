@@ -72,12 +72,12 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.MainPartPrice,
             this.MainPartMin,
             this.MainPartMax});
-            this.PartGrid.Location = new System.Drawing.Point(45, 190);
-            this.PartGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.PartGrid.Location = new System.Drawing.Point(34, 154);
             this.PartGrid.Name = "PartGrid";
             this.PartGrid.RowHeadersWidth = 51;
-            this.PartGrid.Size = new System.Drawing.Size(803, 455);
+            this.PartGrid.Size = new System.Drawing.Size(803, 370);
             this.PartGrid.TabIndex = 2;
+            this.PartGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartGrid_CellContentClick);
             // 
             // MainPartId
             // 
@@ -131,11 +131,10 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.MainProdPrice,
             this.MainProdMin,
             this.MainProdMax});
-            this.ProdGrid.Location = new System.Drawing.Point(908, 190);
-            this.ProdGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.ProdGrid.Location = new System.Drawing.Point(907, 154);
             this.ProdGrid.Name = "ProdGrid";
             this.ProdGrid.RowHeadersWidth = 51;
-            this.ProdGrid.Size = new System.Drawing.Size(804, 455);
+            this.ProdGrid.Size = new System.Drawing.Size(804, 370);
             this.ProdGrid.TabIndex = 3;
             // 
             // MainProdId
@@ -184,11 +183,10 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.ProductLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ProductLabel.Location = new System.Drawing.Point(908, 161);
-            this.ProductLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.ProductLabel.Location = new System.Drawing.Point(907, 131);
             this.ProductLabel.Name = "ProductLabel";
             this.ProductLabel.ReadOnly = true;
-            this.ProductLabel.Size = new System.Drawing.Size(133, 23);
+            this.ProductLabel.Size = new System.Drawing.Size(100, 19);
             this.ProductLabel.TabIndex = 4;
             this.ProductLabel.Text = "Products";
             // 
@@ -196,116 +194,110 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.PartLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PartLabel.Location = new System.Drawing.Point(45, 159);
-            this.PartLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.PartLabel.Location = new System.Drawing.Point(34, 129);
             this.PartLabel.Name = "PartLabel";
             this.PartLabel.ReadOnly = true;
-            this.PartLabel.Size = new System.Drawing.Size(133, 23);
+            this.PartLabel.Size = new System.Drawing.Size(100, 19);
             this.PartLabel.TabIndex = 5;
             this.PartLabel.Text = "Parts";
             // 
             // SearchPartBox
             // 
-            this.SearchPartBox.Location = new System.Drawing.Point(573, 160);
-            this.SearchPartBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchPartBox.Location = new System.Drawing.Point(630, 128);
             this.SearchPartBox.Name = "SearchPartBox";
-            this.SearchPartBox.Size = new System.Drawing.Size(275, 22);
+            this.SearchPartBox.Size = new System.Drawing.Size(207, 20);
             this.SearchPartBox.TabIndex = 6;
             // 
             // SearchProdBox
             // 
-            this.SearchProdBox.Location = new System.Drawing.Point(1437, 160);
-            this.SearchProdBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchProdBox.Location = new System.Drawing.Point(1504, 130);
             this.SearchProdBox.Name = "SearchProdBox";
-            this.SearchProdBox.Size = new System.Drawing.Size(275, 22);
+            this.SearchProdBox.Size = new System.Drawing.Size(207, 20);
             this.SearchProdBox.TabIndex = 7;
             // 
             // SearchParts
             // 
-            this.SearchParts.Location = new System.Drawing.Point(465, 158);
-            this.SearchParts.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchParts.Location = new System.Drawing.Point(549, 128);
             this.SearchParts.Name = "SearchParts";
-            this.SearchParts.Size = new System.Drawing.Size(100, 25);
+            this.SearchParts.Size = new System.Drawing.Size(75, 20);
             this.SearchParts.TabIndex = 8;
             this.SearchParts.Text = "Search";
             this.SearchParts.UseVisualStyleBackColor = true;
+            this.SearchParts.Click += new System.EventHandler(this.SearchParts_Click);
             // 
             // SearchProducts
             // 
-            this.SearchProducts.Location = new System.Drawing.Point(1329, 158);
-            this.SearchProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchProducts.Location = new System.Drawing.Point(1423, 130);
             this.SearchProducts.Name = "SearchProducts";
-            this.SearchProducts.Size = new System.Drawing.Size(100, 25);
+            this.SearchProducts.Size = new System.Drawing.Size(75, 20);
             this.SearchProducts.TabIndex = 9;
             this.SearchProducts.Text = "Search";
             this.SearchProducts.UseVisualStyleBackColor = true;
+            this.SearchProducts.Click += new System.EventHandler(this.SearchProducts_Click);
             // 
             // AddParts
             // 
-            this.AddParts.Location = new System.Drawing.Point(532, 653);
-            this.AddParts.Margin = new System.Windows.Forms.Padding(4);
+            this.AddParts.Location = new System.Drawing.Point(600, 531);
             this.AddParts.Name = "AddParts";
-            this.AddParts.Size = new System.Drawing.Size(100, 37);
+            this.AddParts.Size = new System.Drawing.Size(75, 30);
             this.AddParts.TabIndex = 10;
             this.AddParts.Text = "Add";
             this.AddParts.UseVisualStyleBackColor = true;
+            this.AddParts.Click += new System.EventHandler(this.AddParts_Click);
             // 
             // ModifyParts
             // 
-            this.ModifyParts.Location = new System.Drawing.Point(640, 653);
-            this.ModifyParts.Margin = new System.Windows.Forms.Padding(4);
+            this.ModifyParts.Location = new System.Drawing.Point(681, 531);
             this.ModifyParts.Name = "ModifyParts";
-            this.ModifyParts.Size = new System.Drawing.Size(100, 37);
+            this.ModifyParts.Size = new System.Drawing.Size(75, 30);
             this.ModifyParts.TabIndex = 11;
             this.ModifyParts.Text = "Modify";
             this.ModifyParts.UseVisualStyleBackColor = true;
+            this.ModifyParts.Click += new System.EventHandler(this.ModifyParts_Click);
             // 
             // DeleteParts
             // 
-            this.DeleteParts.Location = new System.Drawing.Point(748, 653);
-            this.DeleteParts.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteParts.Location = new System.Drawing.Point(762, 531);
             this.DeleteParts.Name = "DeleteParts";
-            this.DeleteParts.Size = new System.Drawing.Size(100, 37);
+            this.DeleteParts.Size = new System.Drawing.Size(75, 30);
             this.DeleteParts.TabIndex = 12;
             this.DeleteParts.Text = "Delete";
             this.DeleteParts.UseVisualStyleBackColor = true;
+            this.DeleteParts.Click += new System.EventHandler(this.DeleteParts_Click);
             // 
             // AddProducts
             // 
-            this.AddProducts.Location = new System.Drawing.Point(1397, 653);
-            this.AddProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.AddProducts.Location = new System.Drawing.Point(1474, 531);
             this.AddProducts.Name = "AddProducts";
-            this.AddProducts.Size = new System.Drawing.Size(100, 37);
+            this.AddProducts.Size = new System.Drawing.Size(75, 30);
             this.AddProducts.TabIndex = 13;
             this.AddProducts.Text = "Add";
             this.AddProducts.UseVisualStyleBackColor = true;
+            this.AddProducts.Click += new System.EventHandler(this.AddProducts_Click);
             // 
             // ModifyProducts
             // 
-            this.ModifyProducts.Location = new System.Drawing.Point(1505, 653);
-            this.ModifyProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.ModifyProducts.Location = new System.Drawing.Point(1555, 531);
             this.ModifyProducts.Name = "ModifyProducts";
-            this.ModifyProducts.Size = new System.Drawing.Size(100, 37);
+            this.ModifyProducts.Size = new System.Drawing.Size(75, 30);
             this.ModifyProducts.TabIndex = 14;
             this.ModifyProducts.Text = "Modify";
             this.ModifyProducts.UseVisualStyleBackColor = true;
             // 
             // DeleteProducts
             // 
-            this.DeleteProducts.Location = new System.Drawing.Point(1613, 653);
-            this.DeleteProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteProducts.Location = new System.Drawing.Point(1636, 531);
             this.DeleteProducts.Name = "DeleteProducts";
-            this.DeleteProducts.Size = new System.Drawing.Size(100, 37);
+            this.DeleteProducts.Size = new System.Drawing.Size(75, 30);
             this.DeleteProducts.TabIndex = 15;
             this.DeleteProducts.Text = "Delete";
             this.DeleteProducts.UseVisualStyleBackColor = true;
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(1613, 733);
-            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Location = new System.Drawing.Point(1636, 596);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(100, 37);
+            this.Exit.Size = new System.Drawing.Size(75, 30);
             this.Exit.TabIndex = 16;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
@@ -314,9 +306,10 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.MainScreenLabel.AutoSize = true;
             this.MainScreenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.MainScreenLabel.Location = new System.Drawing.Point(617, 9);
+            this.MainScreenLabel.Location = new System.Drawing.Point(641, 9);
+            this.MainScreenLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainScreenLabel.Name = "MainScreenLabel";
-            this.MainScreenLabel.Size = new System.Drawing.Size(575, 31);
+            this.MainScreenLabel.Size = new System.Drawing.Size(463, 25);
             this.MainScreenLabel.TabIndex = 17;
             this.MainScreenLabel.Text = "Inventory Management System Home Page";
             // 
@@ -324,17 +317,18 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(736, 54);
+            this.label1.Location = new System.Drawing.Point(730, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 17);
+            this.label1.Size = new System.Drawing.Size(269, 13);
             this.label1.TabIndex = 18;
             this.label1.Text = "Shadi Mahfouz | ID# 001423923 | 02/17/2021";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1765, 795);
+            this.ClientSize = new System.Drawing.Size(1744, 673);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MainScreenLabel);
             this.Controls.Add(this.Exit);
@@ -352,7 +346,6 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.Controls.Add(this.ProductLabel);
             this.Controls.Add(this.ProdGrid);
             this.Controls.Add(this.PartGrid);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Main Screen";
             ((System.ComponentModel.ISupportInitialize)(this.PartGrid)).EndInit();

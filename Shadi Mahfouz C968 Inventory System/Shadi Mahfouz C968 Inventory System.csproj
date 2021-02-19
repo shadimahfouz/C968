@@ -52,6 +52,8 @@
     <Compile Include="AddProducts.Designer.cs">
       <DependentUpon>AddProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="InHouse.cs" />
+    <Compile Include="Inventory.cs" />
     <Compile Include="ModProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +78,9 @@
     <Compile Include="AddParts.Designer.cs">
       <DependentUpon>AddParts.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutSourced.cs" />
+    <Compile Include="Part.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddProducts.resx">
