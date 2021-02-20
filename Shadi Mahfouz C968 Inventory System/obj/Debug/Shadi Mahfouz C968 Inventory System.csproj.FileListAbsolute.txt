@@ -15,7 +15,6 @@ C:\C968\School_Projects-main\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.exe.config
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.exe
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\bin\Debug\Shadi Mahfouz C968 Inventory System.pdb
-C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csprojAssemblyReference.cache
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.AddProduct.resources
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.ModProducts.resources
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi_Mahfouz_C968_Inventory_System.ModPart.resources
@@ -26,3 +25,4 @@ C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inv
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csproj.CoreCompileInputs.cache
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.exe
 C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.pdb
+C:\WGU\C968\Shadi Mahfouz C968 Inventory System\obj\Debug\Shadi Mahfouz C968 Inventory System.csprojAssemblyReference.cache

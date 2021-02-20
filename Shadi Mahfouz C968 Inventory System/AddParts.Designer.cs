@@ -56,7 +56,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.InHouseAdd.AutoSize = true;
             this.InHouseAdd.Location = new System.Drawing.Point(159, 16);
-            this.InHouseAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InHouseAdd.Margin = new System.Windows.Forms.Padding(2);
             this.InHouseAdd.Name = "InHouseAdd";
             this.InHouseAdd.Size = new System.Drawing.Size(68, 17);
             this.InHouseAdd.TabIndex = 3;
@@ -69,7 +69,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.OutsourcedAdd.AutoSize = true;
             this.OutsourcedAdd.Location = new System.Drawing.Point(233, 16);
-            this.OutsourcedAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OutsourcedAdd.Margin = new System.Windows.Forms.Padding(2);
             this.OutsourcedAdd.Name = "OutsourcedAdd";
             this.OutsourcedAdd.Size = new System.Drawing.Size(80, 17);
             this.OutsourcedAdd.TabIndex = 4;
@@ -92,23 +92,27 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // AddMacIdText
             // 
             this.AddMacIdText.Location = new System.Drawing.Point(147, 185);
-            this.AddMacIdText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddMacIdText.Margin = new System.Windows.Forms.Padding(2);
             this.AddMacIdText.Name = "AddMacIdText";
             this.AddMacIdText.Size = new System.Drawing.Size(76, 20);
             this.AddMacIdText.TabIndex = 6;
+            this.AddMacIdText.TextChanged += new System.EventHandler(this.AddMacIdText_TextChanged);
+            this.AddMacIdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddMacIdText_KeyPress);
             // 
             // AddIdText
             // 
             this.AddIdText.Location = new System.Drawing.Point(147, 71);
-            this.AddIdText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddIdText.Margin = new System.Windows.Forms.Padding(2);
             this.AddIdText.Name = "AddIdText";
             this.AddIdText.Size = new System.Drawing.Size(76, 20);
             this.AddIdText.TabIndex = 7;
+            this.AddIdText.TextChanged += new System.EventHandler(this.AddIdText_TextChanged);
+            this.AddIdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddIdText_KeyPress);
             // 
             // AddNameText
             // 
             this.AddNameText.Location = new System.Drawing.Point(147, 94);
-            this.AddNameText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddNameText.Margin = new System.Windows.Forms.Padding(2);
             this.AddNameText.Name = "AddNameText";
             this.AddNameText.Size = new System.Drawing.Size(76, 20);
             this.AddNameText.TabIndex = 8;
@@ -117,40 +121,44 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // AddInvText
             // 
             this.AddInvText.Location = new System.Drawing.Point(147, 116);
-            this.AddInvText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddInvText.Margin = new System.Windows.Forms.Padding(2);
             this.AddInvText.Name = "AddInvText";
             this.AddInvText.Size = new System.Drawing.Size(76, 20);
             this.AddInvText.TabIndex = 9;
+            this.AddInvText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddInvText_KeyPress);
             // 
             // AddPriceText
             // 
             this.AddPriceText.Location = new System.Drawing.Point(147, 139);
-            this.AddPriceText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddPriceText.Margin = new System.Windows.Forms.Padding(2);
             this.AddPriceText.Name = "AddPriceText";
             this.AddPriceText.Size = new System.Drawing.Size(76, 20);
             this.AddPriceText.TabIndex = 10;
+            this.AddPriceText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddPriceText_KeyPress);
             // 
             // AddMaxText
             // 
             this.AddMaxText.Location = new System.Drawing.Point(147, 163);
-            this.AddMaxText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddMaxText.Margin = new System.Windows.Forms.Padding(2);
             this.AddMaxText.Name = "AddMaxText";
             this.AddMaxText.Size = new System.Drawing.Size(58, 20);
             this.AddMaxText.TabIndex = 11;
             this.AddMaxText.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.AddMaxText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddMaxText_KeyPress);
             // 
             // AddMinText
             // 
             this.AddMinText.Location = new System.Drawing.Point(245, 162);
-            this.AddMinText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddMinText.Margin = new System.Windows.Forms.Padding(2);
             this.AddMinText.Name = "AddMinText";
             this.AddMinText.Size = new System.Drawing.Size(58, 20);
             this.AddMinText.TabIndex = 12;
+            this.AddMinText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddMinText_KeyPress);
             // 
             // SaveAddPart
             // 
             this.SaveAddPart.Location = new System.Drawing.Point(174, 225);
-            this.SaveAddPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SaveAddPart.Margin = new System.Windows.Forms.Padding(2);
             this.SaveAddPart.Name = "SaveAddPart";
             this.SaveAddPart.Size = new System.Drawing.Size(49, 23);
             this.SaveAddPart.TabIndex = 13;
@@ -161,7 +169,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // CancelAddPart
             // 
             this.CancelAddPart.Location = new System.Drawing.Point(254, 225);
-            this.CancelAddPart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CancelAddPart.Margin = new System.Windows.Forms.Padding(2);
             this.CancelAddPart.Name = "CancelAddPart";
             this.CancelAddPart.Size = new System.Drawing.Size(49, 23);
             this.CancelAddPart.TabIndex = 14;
@@ -270,9 +278,10 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.Controls.Add(this.AddPartLabel);
             this.Controls.Add(this.OutsourcedAdd);
             this.Controls.Add(this.InHouseAdd);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddPart";
             this.Text = "Add Parts";
+            this.Load += new System.EventHandler(this.AddPart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,5 +308,49 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         private System.Windows.Forms.Label AddPartMin;
         private System.Windows.Forms.Label AddPartMacId;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+
+
+        //Connects public variables to text boxes via getters and setters
+        public int addPartIdBox
+        {
+            get { return int.Parse(AddIdText.Text); }
+            set { AddIdText.Text = value.ToString(); }
+        }
+
+        public string addPartNameBox
+        {
+            get { return AddNameText.Text; }
+            set { AddNameText.Text = value; }
+        }
+
+        public int addPartInvBox
+        {
+            get { return int.Parse(AddInvText.Text); }
+            set { AddInvText.Text = value.ToString(); }
+        }
+
+        public decimal addPartPriceBox
+        {
+            get { return decimal.Parse(AddPriceText.Text); }
+            set { AddPriceText.Text = value.ToString(); }
+        }
+
+        public int addPartMinBox
+        {
+            get { return int.Parse(AddMinText.Text); }
+            set { AddMinText.Text = value.ToString(); }
+        }
+
+        public int addPartMaxBox
+        {
+            get { return int.Parse(AddMaxText.Text); }
+            set { AddMaxText.Text = value.ToString(); }
+        }
+
+        public string addPartMacIdBox
+        {
+            get { return AddMacIdText.Text; }
+            set { AddMacIdText.Text = value; }
+        }
     }
 }

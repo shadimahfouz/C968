@@ -11,19 +11,23 @@ namespace Shadi_Mahfouz_C968_Inventory_System
 
         public static void ExistingItems() // Pre-populates the data grids with parts and products for testing purposes
         {
-            Product firstProd = new Product(1, "Motherboard", 4, 25.00m, 5, 15);
+            Product firstProd = new Product(1, "Motherboard", 7, 25.00m, 5, 15);
             Product secondProd = new Product(2, "GPU", 10, 35.00m, 5, 25);
             Product thirdProd = new Product(3, "PC Case", 6, 45.00m, 3, 10);
+            Product fourthProd = new Product(4, "Gaming Mouse", 10, 5.00m, 5, 25);
+            Product fifthProd = new Product(5, "Gaming Keyboard", 8, 6.00m, 3, 10);
 
             Products.Add(firstProd);
             Products.Add(secondProd);
             Products.Add(thirdProd);
+            Products.Add(fourthProd);
+            Products.Add(fifthProd);
 
-            Part firstPart = new InHouse(1, "Capacitor", 10, 0.25m, 20, 50, 123);
-            Part secondPart = new InHouse(2, "Thermal Pads", 50, 0.10m, 100, 200, 111);
+            Part firstPart = new InHouse(1, "Capacitor", 30, 0.25m, 20, 50, 123);
+            Part secondPart = new InHouse(2, "Thermal Pads", 120, 0.10m, 100, 200, 111);
             Part thirdPart = new InHouse(3, "Wiring Kit", 20, 2.00m, 10, 30, 222);
             Part fourthPart = new InHouse(4, "Led Lights", 20, 1.00m, 15, 50, 333);
-            Part fifthPart = new OutSourced(5, "Thermal Paste", 35, 3.50m, 10, 20, "PC Builders LLC");
+            Part fifthPart = new OutSourced(5, "Thermal Paste", 13, 3.50m, 10, 20, "PC Builders LLC");
             Part sixthPart = new OutSourced(6, "CPU", 5, 65.00m, 2, 10, "Intel");
 
             Parts.Add(firstPart);
@@ -39,33 +43,34 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             thirdProd.AssociatedParts.Add(thirdPart);
             thirdProd.AssociatedParts.Add(fourthPart);
         }
+        
 
-        public static void AddProduct(Product product)
+        public static void AddProduct(Product product) //Add product method
         {
             Products.Add(product);
         }
 
-        public bool RemoveProduct(int prodID)
+        public bool RemoveProduct(int prodID) //Remove product method
         {
             bool removed = false;
-            foreach (Product product in Products)
-            {
-                if (prodID == product.productId)
-                {
-                    Products.Remove(product);
-                    return removed = true;
-                }
-                else
-                {
-                    MessageBox.Show("Please select a valid product ID to remove.");
-                    return false;
-                }
-            }
+         foreach (Product product in Products)
+         {
+             if (prodID == product.productId)
+             {
+                 Products.Remove(product);
+                 return removed = true;
+             }
 
-            return removed;
+             else
+             {
+                 return false;
+             }
+         }
+
+         return removed;
         }
 
-        public static Product LookupProduct(int prodID)
+        public static Product LookupProduct(int prodID) //Lookup product method
         {
             foreach (Product prod in Products)
             {
@@ -79,7 +84,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             return noProd;
         }
 
-        public static void UpdateProduct(int prodID, Product updatedInfo)
+        public static void UpdateProduct(int prodID, Product updatedInfo) //Update product method after editing
         {
             foreach (Product prod in Products)
             {
@@ -96,26 +101,25 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             }
         }
 
-        public static void AddPart(Part part)
+        public static void AddPart(Part part) //Add part method
         {
             Parts.Add(part);
         }
 
-        public bool DeletePart(Part part)
+        public bool DeletePart(Part part) //Delete part method
         {
             try
             {
                 Parts.Remove(part);
                 return true;
             }
-            catch (Exception e)
+            catch
             {
-                MessageBox.Show("Please make a valid selection.");
-                throw;
+                return false;
             }
         }
 
-        public static Part LookupPart(int partID)
+        public static Part LookupPart(int partID) //Look up part method
         {
             foreach (Part part in Parts)
             {
@@ -129,7 +133,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             return noPart;
         }
 
-        public static void UpdateInhousePart(int partID, InHouse inhousePart)
+        public static void UpdateInhousePart(int partID, InHouse inhousePart) //Updates in house part after editing
         {
             for (int i = 0; i < Parts.Count; i++)
             {
@@ -150,7 +154,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             }
         }
 
-        public static void UpdateOutsourcedPart(int partID, OutSourced outsourcedPart)
+        public static void UpdateOutsourcedPart(int partID, OutSourced outsourcedPart) //Updates outsourced part after editing
         {
             for (int i = 0; i < Parts.Count; i++)
             {

@@ -52,18 +52,6 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.AddProdSearch = new System.Windows.Forms.Button();
             this.AddProdSave = new System.Windows.Forms.Button();
             this.AddProdCancel = new System.Windows.Forms.Button();
-            this.PartsAssocId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartsAssocName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartsAssocInv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartsAssocPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartsAssocMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartsAssocMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandPartsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandPartInv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandProdPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandProdMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandProdMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CandPartsGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PartsAssocGrid)).BeginInit();
             this.SuspendLayout();
@@ -72,313 +60,242 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // 
             this.AddProdLabel.AutoSize = true;
             this.AddProdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddProdLabel.Location = new System.Drawing.Point(12, 9);
+            this.AddProdLabel.Location = new System.Drawing.Point(9, 7);
+            this.AddProdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AddProdLabel.Name = "AddProdLabel";
-            this.AddProdLabel.Size = new System.Drawing.Size(112, 20);
+            this.AddProdLabel.Size = new System.Drawing.Size(97, 17);
             this.AddProdLabel.TabIndex = 0;
             this.AddProdLabel.Text = "Add Product";
             // 
             // CandPartsGrid
             // 
             this.CandPartsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CandPartsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CandPartsId,
-            this.CandPartName,
-            this.CandPartInv,
-            this.CandProdPrice,
-            this.CandProdMin,
-            this.CandProdMax});
-            this.CandPartsGrid.Location = new System.Drawing.Point(359, 65);
+            this.CandPartsGrid.Location = new System.Drawing.Point(269, 53);
+            this.CandPartsGrid.Margin = new System.Windows.Forms.Padding(2);
             this.CandPartsGrid.Name = "CandPartsGrid";
             this.CandPartsGrid.RowHeadersWidth = 51;
             this.CandPartsGrid.RowTemplate.Height = 24;
-            this.CandPartsGrid.Size = new System.Drawing.Size(803, 212);
+            this.CandPartsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.CandPartsGrid.Size = new System.Drawing.Size(602, 172);
             this.CandPartsGrid.TabIndex = 1;
             // 
             // PartsAssocGrid
             // 
             this.PartsAssocGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PartsAssocGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PartsAssocId,
-            this.PartsAssocName,
-            this.PartsAssocInv,
-            this.PartsAssocPrice,
-            this.PartsAssocMin,
-            this.PartsAssocMax});
-            this.PartsAssocGrid.Location = new System.Drawing.Point(359, 340);
+            this.PartsAssocGrid.Location = new System.Drawing.Point(269, 276);
+            this.PartsAssocGrid.Margin = new System.Windows.Forms.Padding(2);
             this.PartsAssocGrid.Name = "PartsAssocGrid";
             this.PartsAssocGrid.RowHeadersWidth = 51;
             this.PartsAssocGrid.RowTemplate.Height = 24;
-            this.PartsAssocGrid.Size = new System.Drawing.Size(803, 212);
+            this.PartsAssocGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PartsAssocGrid.Size = new System.Drawing.Size(602, 172);
             this.PartsAssocGrid.TabIndex = 2;
+            this.PartsAssocGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartsAssocGrid_CellContentClick);
             // 
             // AddProdMinText
             // 
-            this.AddProdMinText.Location = new System.Drawing.Point(229, 381);
-            this.AddProdMinText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdMinText.Location = new System.Drawing.Point(172, 310);
+            this.AddProdMinText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdMinText.Name = "AddProdMinText";
-            this.AddProdMinText.Size = new System.Drawing.Size(76, 22);
+            this.AddProdMinText.Size = new System.Drawing.Size(58, 20);
             this.AddProdMinText.TabIndex = 3;
+            this.AddProdMinText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdMinText_KeyPress);
             // 
             // AddProdMaxText
             // 
-            this.AddProdMaxText.Location = new System.Drawing.Point(107, 381);
-            this.AddProdMaxText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdMaxText.Location = new System.Drawing.Point(80, 310);
+            this.AddProdMaxText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdMaxText.Name = "AddProdMaxText";
-            this.AddProdMaxText.Size = new System.Drawing.Size(76, 22);
+            this.AddProdMaxText.Size = new System.Drawing.Size(58, 20);
             this.AddProdMaxText.TabIndex = 4;
+            this.AddProdMaxText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdMaxText_KeyPress);
             // 
             // AddProdPriceText
             // 
-            this.AddProdPriceText.Location = new System.Drawing.Point(107, 339);
-            this.AddProdPriceText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdPriceText.Location = new System.Drawing.Point(80, 275);
+            this.AddProdPriceText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdPriceText.Name = "AddProdPriceText";
-            this.AddProdPriceText.Size = new System.Drawing.Size(155, 22);
+            this.AddProdPriceText.Size = new System.Drawing.Size(117, 20);
             this.AddProdPriceText.TabIndex = 5;
+            this.AddProdPriceText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdPriceText_KeyPress);
             // 
             // AddProdInvText
             // 
-            this.AddProdInvText.Location = new System.Drawing.Point(107, 297);
-            this.AddProdInvText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdInvText.Location = new System.Drawing.Point(80, 241);
+            this.AddProdInvText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdInvText.Name = "AddProdInvText";
-            this.AddProdInvText.Size = new System.Drawing.Size(155, 22);
+            this.AddProdInvText.Size = new System.Drawing.Size(117, 20);
             this.AddProdInvText.TabIndex = 6;
+            this.AddProdInvText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdInvText_KeyPress);
             // 
             // AddProdNameText
             // 
-            this.AddProdNameText.Location = new System.Drawing.Point(107, 255);
-            this.AddProdNameText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdNameText.Location = new System.Drawing.Point(80, 207);
+            this.AddProdNameText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdNameText.Name = "AddProdNameText";
-            this.AddProdNameText.Size = new System.Drawing.Size(155, 22);
+            this.AddProdNameText.Size = new System.Drawing.Size(117, 20);
             this.AddProdNameText.TabIndex = 7;
             // 
             // AddProdIdText
             // 
-            this.AddProdIdText.Location = new System.Drawing.Point(107, 213);
-            this.AddProdIdText.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdIdText.Location = new System.Drawing.Point(80, 173);
+            this.AddProdIdText.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdIdText.Name = "AddProdIdText";
-            this.AddProdIdText.Size = new System.Drawing.Size(155, 22);
+            this.AddProdIdText.Size = new System.Drawing.Size(117, 20);
             this.AddProdIdText.TabIndex = 8;
+            this.AddProdIdText.TextChanged += new System.EventHandler(this.AddProdIdText_TextChanged);
+            this.AddProdIdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdIdText_KeyPress);
             // 
             // AddProdSearchText
             // 
-            this.AddProdSearchText.Location = new System.Drawing.Point(841, 37);
+            this.AddProdSearchText.Location = new System.Drawing.Point(631, 30);
+            this.AddProdSearchText.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdSearchText.Name = "AddProdSearchText";
-            this.AddProdSearchText.Size = new System.Drawing.Size(321, 22);
+            this.AddProdSearchText.Size = new System.Drawing.Size(242, 20);
             this.AddProdSearchText.TabIndex = 9;
+            this.AddProdSearchText.TextChanged += new System.EventHandler(this.AddProdSearchText_TextChanged);
+            this.AddProdSearchText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddProdSearchText_KeyPress);
             // 
             // AddProdId
             // 
             this.AddProdId.AutoSize = true;
-            this.AddProdId.Location = new System.Drawing.Point(80, 216);
-            this.AddProdId.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdId.Location = new System.Drawing.Point(60, 176);
+            this.AddProdId.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdId.Name = "AddProdId";
-            this.AddProdId.Size = new System.Drawing.Size(21, 17);
+            this.AddProdId.Size = new System.Drawing.Size(18, 13);
             this.AddProdId.TabIndex = 11;
             this.AddProdId.Text = "ID";
             // 
             // AddProdName
             // 
             this.AddProdName.AutoSize = true;
-            this.AddProdName.Location = new System.Drawing.Point(56, 258);
-            this.AddProdName.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdName.Location = new System.Drawing.Point(42, 210);
+            this.AddProdName.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdName.Name = "AddProdName";
-            this.AddProdName.Size = new System.Drawing.Size(45, 17);
+            this.AddProdName.Size = new System.Drawing.Size(35, 13);
             this.AddProdName.TabIndex = 12;
             this.AddProdName.Text = "Name";
             // 
             // AddProdInv
             // 
             this.AddProdInv.AutoSize = true;
-            this.AddProdInv.Location = new System.Drawing.Point(35, 300);
-            this.AddProdInv.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdInv.Location = new System.Drawing.Point(26, 244);
+            this.AddProdInv.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdInv.Name = "AddProdInv";
-            this.AddProdInv.Size = new System.Drawing.Size(66, 17);
+            this.AddProdInv.Size = new System.Drawing.Size(51, 13);
             this.AddProdInv.TabIndex = 13;
             this.AddProdInv.Text = "Inventory";
             // 
             // AddProdPrice
             // 
             this.AddProdPrice.AutoSize = true;
-            this.AddProdPrice.Location = new System.Drawing.Point(61, 342);
-            this.AddProdPrice.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdPrice.Location = new System.Drawing.Point(46, 278);
+            this.AddProdPrice.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdPrice.Name = "AddProdPrice";
-            this.AddProdPrice.Size = new System.Drawing.Size(40, 17);
+            this.AddProdPrice.Size = new System.Drawing.Size(31, 13);
             this.AddProdPrice.TabIndex = 14;
             this.AddProdPrice.Text = "Price";
             // 
             // AddProdMax
             // 
             this.AddProdMax.AutoSize = true;
-            this.AddProdMax.Location = new System.Drawing.Point(68, 384);
-            this.AddProdMax.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdMax.Location = new System.Drawing.Point(51, 312);
+            this.AddProdMax.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdMax.Name = "AddProdMax";
-            this.AddProdMax.Size = new System.Drawing.Size(33, 17);
+            this.AddProdMax.Size = new System.Drawing.Size(27, 13);
             this.AddProdMax.TabIndex = 15;
             this.AddProdMax.Text = "Max";
             // 
             // AddProdMin
             // 
             this.AddProdMin.AutoSize = true;
-            this.AddProdMin.Location = new System.Drawing.Point(193, 384);
-            this.AddProdMin.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.AddProdMin.Location = new System.Drawing.Point(145, 312);
+            this.AddProdMin.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
             this.AddProdMin.Name = "AddProdMin";
-            this.AddProdMin.Size = new System.Drawing.Size(30, 17);
+            this.AddProdMin.Size = new System.Drawing.Size(24, 13);
             this.AddProdMin.TabIndex = 16;
             this.AddProdMin.Text = "Min";
             // 
             // CandPartsLabel
             // 
             this.CandPartsLabel.AutoSize = true;
-            this.CandPartsLabel.Location = new System.Drawing.Point(356, 43);
+            this.CandPartsLabel.Location = new System.Drawing.Point(267, 35);
+            this.CandPartsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CandPartsLabel.Name = "CandPartsLabel";
-            this.CandPartsLabel.Size = new System.Drawing.Size(128, 17);
+            this.CandPartsLabel.Size = new System.Drawing.Size(96, 13);
             this.CandPartsLabel.TabIndex = 17;
             this.CandPartsLabel.Text = "All Candidate Parts";
             // 
             // PartsAssocLabel
             // 
             this.PartsAssocLabel.AutoSize = true;
-            this.PartsAssocLabel.Location = new System.Drawing.Point(356, 320);
+            this.PartsAssocLabel.Location = new System.Drawing.Point(267, 260);
+            this.PartsAssocLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PartsAssocLabel.Name = "PartsAssocLabel";
-            this.PartsAssocLabel.Size = new System.Drawing.Size(221, 17);
+            this.PartsAssocLabel.Size = new System.Drawing.Size(167, 13);
             this.PartsAssocLabel.TabIndex = 18;
             this.PartsAssocLabel.Text = "Parts Associated with this Product";
             // 
             // AddProdAdd
             // 
-            this.AddProdAdd.Location = new System.Drawing.Point(1097, 283);
+            this.AddProdAdd.Location = new System.Drawing.Point(823, 230);
+            this.AddProdAdd.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdAdd.Name = "AddProdAdd";
-            this.AddProdAdd.Size = new System.Drawing.Size(65, 28);
+            this.AddProdAdd.Size = new System.Drawing.Size(49, 23);
             this.AddProdAdd.TabIndex = 19;
             this.AddProdAdd.Text = "Add";
             this.AddProdAdd.UseVisualStyleBackColor = true;
+            this.AddProdAdd.Click += new System.EventHandler(this.AddProdAdd_Click);
             // 
             // AddProdDel
             // 
-            this.AddProdDel.Location = new System.Drawing.Point(1097, 558);
+            this.AddProdDel.Location = new System.Drawing.Point(823, 453);
+            this.AddProdDel.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdDel.Name = "AddProdDel";
-            this.AddProdDel.Size = new System.Drawing.Size(65, 28);
+            this.AddProdDel.Size = new System.Drawing.Size(49, 23);
             this.AddProdDel.TabIndex = 20;
             this.AddProdDel.Text = "Delete";
             this.AddProdDel.UseVisualStyleBackColor = true;
+            this.AddProdDel.Click += new System.EventHandler(this.AddProdDel_Click);
             // 
             // AddProdSearch
             // 
-            this.AddProdSearch.Location = new System.Drawing.Point(760, 37);
+            this.AddProdSearch.Location = new System.Drawing.Point(570, 30);
+            this.AddProdSearch.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdSearch.Name = "AddProdSearch";
-            this.AddProdSearch.Size = new System.Drawing.Size(75, 23);
+            this.AddProdSearch.Size = new System.Drawing.Size(56, 19);
             this.AddProdSearch.TabIndex = 21;
             this.AddProdSearch.Text = "Search";
             this.AddProdSearch.UseVisualStyleBackColor = true;
+            this.AddProdSearch.Click += new System.EventHandler(this.AddProdSearch_Click);
             // 
             // AddProdSave
             // 
-            this.AddProdSave.Location = new System.Drawing.Point(1000, 627);
+            this.AddProdSave.Location = new System.Drawing.Point(750, 509);
+            this.AddProdSave.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdSave.Name = "AddProdSave";
-            this.AddProdSave.Size = new System.Drawing.Size(65, 28);
+            this.AddProdSave.Size = new System.Drawing.Size(49, 23);
             this.AddProdSave.TabIndex = 22;
             this.AddProdSave.Text = "Save";
             this.AddProdSave.UseVisualStyleBackColor = true;
+            this.AddProdSave.Click += new System.EventHandler(this.AddProdSave_Click);
             // 
             // AddProdCancel
             // 
-            this.AddProdCancel.Location = new System.Drawing.Point(1097, 627);
+            this.AddProdCancel.Location = new System.Drawing.Point(823, 509);
+            this.AddProdCancel.Margin = new System.Windows.Forms.Padding(2);
             this.AddProdCancel.Name = "AddProdCancel";
-            this.AddProdCancel.Size = new System.Drawing.Size(65, 28);
+            this.AddProdCancel.Size = new System.Drawing.Size(49, 23);
             this.AddProdCancel.TabIndex = 23;
             this.AddProdCancel.Text = "Cancel";
             this.AddProdCancel.UseVisualStyleBackColor = true;
-            // 
-            // PartsAssocId
-            // 
-            this.PartsAssocId.HeaderText = "Part ID";
-            this.PartsAssocId.MinimumWidth = 6;
-            this.PartsAssocId.Name = "PartsAssocId";
-            this.PartsAssocId.Width = 125;
-            // 
-            // PartsAssocName
-            // 
-            this.PartsAssocName.HeaderText = "Name";
-            this.PartsAssocName.MinimumWidth = 6;
-            this.PartsAssocName.Name = "PartsAssocName";
-            this.PartsAssocName.Width = 125;
-            // 
-            // PartsAssocInv
-            // 
-            this.PartsAssocInv.HeaderText = "Inventory";
-            this.PartsAssocInv.MinimumWidth = 6;
-            this.PartsAssocInv.Name = "PartsAssocInv";
-            this.PartsAssocInv.Width = 125;
-            // 
-            // PartsAssocPrice
-            // 
-            this.PartsAssocPrice.HeaderText = "Price";
-            this.PartsAssocPrice.MinimumWidth = 6;
-            this.PartsAssocPrice.Name = "PartsAssocPrice";
-            this.PartsAssocPrice.Width = 125;
-            // 
-            // PartsAssocMin
-            // 
-            this.PartsAssocMin.HeaderText = "Min";
-            this.PartsAssocMin.MinimumWidth = 6;
-            this.PartsAssocMin.Name = "PartsAssocMin";
-            this.PartsAssocMin.Width = 125;
-            // 
-            // PartsAssocMax
-            // 
-            this.PartsAssocMax.HeaderText = "Max";
-            this.PartsAssocMax.MinimumWidth = 6;
-            this.PartsAssocMax.Name = "PartsAssocMax";
-            this.PartsAssocMax.Width = 125;
-            // 
-            // CandPartsId
-            // 
-            this.CandPartsId.HeaderText = "Part ID";
-            this.CandPartsId.MinimumWidth = 6;
-            this.CandPartsId.Name = "CandPartsId";
-            this.CandPartsId.Width = 125;
-            // 
-            // CandPartName
-            // 
-            this.CandPartName.HeaderText = "Name";
-            this.CandPartName.MinimumWidth = 6;
-            this.CandPartName.Name = "CandPartName";
-            this.CandPartName.Width = 125;
-            // 
-            // CandPartInv
-            // 
-            this.CandPartInv.HeaderText = "Inventory";
-            this.CandPartInv.MinimumWidth = 6;
-            this.CandPartInv.Name = "CandPartInv";
-            this.CandPartInv.Width = 125;
-            // 
-            // CandProdPrice
-            // 
-            this.CandProdPrice.HeaderText = "Price";
-            this.CandProdPrice.MinimumWidth = 6;
-            this.CandProdPrice.Name = "CandProdPrice";
-            this.CandProdPrice.Width = 125;
-            // 
-            // CandProdMin
-            // 
-            this.CandProdMin.HeaderText = "Min";
-            this.CandProdMin.MinimumWidth = 6;
-            this.CandProdMin.Name = "CandProdMin";
-            this.CandProdMin.Width = 125;
-            // 
-            // CandProdMax
-            // 
-            this.CandProdMax.HeaderText = "Max";
-            this.CandProdMax.MinimumWidth = 6;
-            this.CandProdMax.Name = "CandProdMax";
-            this.CandProdMax.Width = 125;
+            this.AddProdCancel.Click += new System.EventHandler(this.AddProdCancel_Click);
             // 
             // AddProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 681);
+            this.ClientSize = new System.Drawing.Size(894, 553);
             this.Controls.Add(this.AddProdCancel);
             this.Controls.Add(this.AddProdSave);
             this.Controls.Add(this.AddProdSearch);
@@ -402,8 +319,10 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.Controls.Add(this.PartsAssocGrid);
             this.Controls.Add(this.CandPartsGrid);
             this.Controls.Add(this.AddProdLabel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddProduct";
             this.Text = "Add Products";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CandPartsGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PartsAssocGrid)).EndInit();
             this.ResumeLayout(false);
@@ -436,17 +355,42 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         private System.Windows.Forms.Button AddProdSearch;
         private System.Windows.Forms.Button AddProdSave;
         private System.Windows.Forms.Button AddProdCancel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandPartsId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandPartName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandPartInv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandProdPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandProdMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CandProdMax;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocInv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartsAssocMax;
+
+        //Connects public variables to text boxes via getters and setters
+        public int addProdIdBox
+        {
+            get { return int.Parse(AddProdIdText.Text); }
+            set { AddProdIdText.Text = value.ToString(); }
+        }
+
+        public string addProdNameBox
+        {
+            get { return AddProdNameText.Text; }
+            set { AddProdNameText.Text = value; }
+        }
+
+        public int addProdInvBox
+        {
+            get { return int.Parse(AddProdInvText.Text); }
+            set { AddProdInvText.Text = value.ToString(); }
+        }
+
+        public decimal addProdPriceBox
+        {
+            get { return decimal.Parse(AddProdPriceText.Text); }
+            set { AddProdPriceText.Text = value.ToString(); }
+        }
+
+        public int addProdMinBox
+        {
+            get { return int.Parse(AddProdMinText.Text); }
+            set { AddProdMinText.Text = value.ToString(); }
+        }
+
+        public int addProdMaxBox
+        {
+            get { return int.Parse(AddProdMaxText.Text); }
+            set { AddProdMaxText.Text = value.ToString(); }
+        }
     }
 }

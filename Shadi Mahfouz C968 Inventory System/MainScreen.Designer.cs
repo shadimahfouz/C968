@@ -30,19 +30,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         private void InitializeComponent()
         {
             this.PartGrid = new System.Windows.Forms.DataGridView();
-            this.MainPartId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainPartInv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProdGrid = new System.Windows.Forms.DataGridView();
-            this.MainProdId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainProdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainProdInv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainProdPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainProdMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MainProdMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductLabel = new System.Windows.Forms.TextBox();
             this.PartLabel = new System.Windows.Forms.TextBox();
             this.SearchPartBox = new System.Windows.Forms.TextBox();
@@ -65,119 +53,24 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             // PartGrid
             // 
             this.PartGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PartGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MainPartId,
-            this.MainPartName,
-            this.MainPartInv,
-            this.MainPartPrice,
-            this.MainPartMin,
-            this.MainPartMax});
             this.PartGrid.Location = new System.Drawing.Point(34, 154);
             this.PartGrid.Name = "PartGrid";
             this.PartGrid.RowHeadersWidth = 51;
+            this.PartGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PartGrid.Size = new System.Drawing.Size(803, 370);
             this.PartGrid.TabIndex = 2;
             this.PartGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartGrid_CellContentClick);
             // 
-            // MainPartId
-            // 
-            this.MainPartId.HeaderText = "Part ID";
-            this.MainPartId.MinimumWidth = 6;
-            this.MainPartId.Name = "MainPartId";
-            this.MainPartId.Width = 125;
-            // 
-            // MainPartName
-            // 
-            this.MainPartName.HeaderText = "Name";
-            this.MainPartName.MinimumWidth = 6;
-            this.MainPartName.Name = "MainPartName";
-            this.MainPartName.Width = 125;
-            // 
-            // MainPartInv
-            // 
-            this.MainPartInv.HeaderText = "Inventory";
-            this.MainPartInv.MinimumWidth = 6;
-            this.MainPartInv.Name = "MainPartInv";
-            this.MainPartInv.Width = 125;
-            // 
-            // MainPartPrice
-            // 
-            this.MainPartPrice.HeaderText = "Price";
-            this.MainPartPrice.MinimumWidth = 6;
-            this.MainPartPrice.Name = "MainPartPrice";
-            this.MainPartPrice.Width = 125;
-            // 
-            // MainPartMin
-            // 
-            this.MainPartMin.HeaderText = "Min";
-            this.MainPartMin.MinimumWidth = 6;
-            this.MainPartMin.Name = "MainPartMin";
-            this.MainPartMin.Width = 125;
-            // 
-            // MainPartMax
-            // 
-            this.MainPartMax.HeaderText = "Max";
-            this.MainPartMax.MinimumWidth = 6;
-            this.MainPartMax.Name = "MainPartMax";
-            this.MainPartMax.Width = 125;
-            // 
             // ProdGrid
             // 
             this.ProdGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProdGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MainProdId,
-            this.MainProdName,
-            this.MainProdInv,
-            this.MainProdPrice,
-            this.MainProdMin,
-            this.MainProdMax});
             this.ProdGrid.Location = new System.Drawing.Point(907, 154);
             this.ProdGrid.Name = "ProdGrid";
             this.ProdGrid.RowHeadersWidth = 51;
+            this.ProdGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProdGrid.Size = new System.Drawing.Size(804, 370);
             this.ProdGrid.TabIndex = 3;
-            // 
-            // MainProdId
-            // 
-            this.MainProdId.HeaderText = "Product ID";
-            this.MainProdId.MinimumWidth = 6;
-            this.MainProdId.Name = "MainProdId";
-            this.MainProdId.Width = 125;
-            // 
-            // MainProdName
-            // 
-            this.MainProdName.HeaderText = "Name";
-            this.MainProdName.MinimumWidth = 6;
-            this.MainProdName.Name = "MainProdName";
-            this.MainProdName.Width = 125;
-            // 
-            // MainProdInv
-            // 
-            this.MainProdInv.HeaderText = "Inventory";
-            this.MainProdInv.MinimumWidth = 6;
-            this.MainProdInv.Name = "MainProdInv";
-            this.MainProdInv.Width = 125;
-            // 
-            // MainProdPrice
-            // 
-            this.MainProdPrice.HeaderText = "Price";
-            this.MainProdPrice.MinimumWidth = 6;
-            this.MainProdPrice.Name = "MainProdPrice";
-            this.MainProdPrice.Width = 125;
-            // 
-            // MainProdMin
-            // 
-            this.MainProdMin.HeaderText = "Min";
-            this.MainProdMin.MinimumWidth = 6;
-            this.MainProdMin.Name = "MainProdMin";
-            this.MainProdMin.Width = 125;
-            // 
-            // MainProdMax
-            // 
-            this.MainProdMax.HeaderText = "Max";
-            this.MainProdMax.MinimumWidth = 6;
-            this.MainProdMax.Name = "MainProdMax";
-            this.MainProdMax.Width = 125;
+            this.ProdGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdGrid_CellContentClick);
             // 
             // ProductLabel
             // 
@@ -207,6 +100,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.SearchPartBox.Name = "SearchPartBox";
             this.SearchPartBox.Size = new System.Drawing.Size(207, 20);
             this.SearchPartBox.TabIndex = 6;
+            this.SearchPartBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchPartBox_KeyPress);
             // 
             // SearchProdBox
             // 
@@ -214,6 +108,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.SearchProdBox.Name = "SearchProdBox";
             this.SearchProdBox.Size = new System.Drawing.Size(207, 20);
             this.SearchProdBox.TabIndex = 7;
+            this.SearchProdBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchProdBox_KeyPress);
             // 
             // SearchParts
             // 
@@ -283,6 +178,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.ModifyProducts.TabIndex = 14;
             this.ModifyProducts.Text = "Modify";
             this.ModifyProducts.UseVisualStyleBackColor = true;
+            this.ModifyProducts.Click += new System.EventHandler(this.ModifyProducts_Click);
             // 
             // DeleteProducts
             // 
@@ -292,6 +188,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.DeleteProducts.TabIndex = 15;
             this.DeleteProducts.Text = "Delete";
             this.DeleteProducts.UseVisualStyleBackColor = true;
+            this.DeleteProducts.Click += new System.EventHandler(this.DeleteProducts_Click);
             // 
             // Exit
             // 
@@ -301,6 +198,7 @@ namespace Shadi_Mahfouz_C968_Inventory_System
             this.Exit.TabIndex = 16;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // MainScreenLabel
             // 
@@ -356,8 +254,8 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView PartGrid;
-        private System.Windows.Forms.DataGridView ProdGrid;
+        public System.Windows.Forms.DataGridView PartGrid;
+        public System.Windows.Forms.DataGridView ProdGrid;
         private System.Windows.Forms.TextBox ProductLabel;
         private System.Windows.Forms.TextBox PartLabel;
         private System.Windows.Forms.TextBox SearchPartBox;
@@ -371,20 +269,21 @@ namespace Shadi_Mahfouz_C968_Inventory_System
         private System.Windows.Forms.Button ModifyProducts;
         private System.Windows.Forms.Button DeleteProducts;
         private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartInv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainPartMax;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdInv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MainProdMax;
         private System.Windows.Forms.Label MainScreenLabel;
         private System.Windows.Forms.Label label1;
+
+        //Connects public variables to text boxes via getters and setters
+        public int partSearchBox
+        {
+            get { return int.Parse(SearchPartBox.Text); }
+            set { SearchPartBox.Text = value.ToString(); }
+        }
+
+        public int prodSearchBox
+        {
+            get { return int.Parse(SearchProdBox.Text);}
+            set { SearchProdBox.Text = value.ToString(); }
+        }
     }
 }
 
